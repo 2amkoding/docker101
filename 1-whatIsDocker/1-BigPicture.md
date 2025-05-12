@@ -1,12 +1,12 @@
 ```plaintext
 
-[x] what is docker
+[x] What is docker
     - fixes: the 'works on my machine' problem
     
     - Docker lets you package your app with everything it needs — like code, libraries, and tools — so it runs the same no matter where you launch it. It does this by putting everything into a lightweight, isolated environment called a container.
 
-[x] virtual machines vs containers
-    - Container: an isolated enviornment for running an application
+[x] Virtual machines vs Containers
+    - Container: an isolated environment for running an application
         - run multiple apps in isolation
         - lightweight
         - OS for the host
@@ -19,7 +19,7 @@
             - multi licenses, patch, monitoring
 
 
-[x] architecture of Docker
+[x] Architecture of Docker
     
     client --restAPI--> Server
                         [Docker Engine]
@@ -33,15 +33,15 @@
         - Windows: windows+linux
         - MacOS: LinuxVM -> linux containers
 
-[x] install docker
+[x] Install docker
 
-[x] development workflow
+[x] Development workflow
     - 'dockerize the app'
         - Add a dockerFile
     - Image(a cut-down os, runtime env, app files, 3rd Party libraries, Env Vars)
     - Start a CONTAINER w IMAGE
         - own file system
-    -Push to REGISTRY
+    -Push to REGISTRY(dockerHUB)
         - like github for images
 
 
