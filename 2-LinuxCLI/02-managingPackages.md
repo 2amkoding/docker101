@@ -1,8 +1,8 @@
 ```plaintext
 
 ## commands
-    apt update: update package database
-    apt list: list installed packages
+    apt update  : update package database
+    apt list    : list installed packages
     apt install nano
     apt remove nano
 
