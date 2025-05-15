@@ -4,6 +4,12 @@
     https://docs.docker.com/guides/nodejs/containerize/
     https://hub.docker.com/_/node/tags
 
+# Commands
+    docker build -t <name> .
+    docker images
+    docker image ls
+    docker run -it <image> sh
+
 # Steps
     - Create react-app
     - Create Dockerfile
