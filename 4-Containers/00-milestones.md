@@ -1,6 +1,6 @@
 ```plaintext
 [x] Starting & stopping containers
-[] Publishing ports
+[x] Publishing ports
 [x] Viewing logs
 [] Executing commands in containers
 [] Removing containers
@@ -22,6 +22,15 @@ docker logs <containerID>
 docker logs -f <containerID>    : to follow the log
 docker logs —t <containerID>    : to add timestamps
 docker logs —n 10 <containerID> : to view the last 10 lines
+
+# Executing Commands in Running Containers
+docker exec <containerID> <cmd>
+docker exec -it <containerID> sh
+
+    exec vs run
+        run: starts a new container and runs command
+        exec: execute a command in a running program
+
 
 
 ```
