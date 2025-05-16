@@ -31,7 +31,7 @@ docker exec <containerID> <cmd>
 docker exec -it <containerID> sh
 
     exec vs run
-        run: starts a new container and runs command
+        run : starts a new container and runs command
         exec: execute a command in a running program
 
 # Stopping & Starting Containers
@@ -41,6 +41,12 @@ docker start <containerID
     start vs run
         run  : start new container
         start: start a stopped container
+
+# Removing Containers
+docker container rm <containerID>
+docker rm <containerID>
+docker rm -f <containerID>  : to force the removal
+docker container prune      : to remove stopped containers
 
 
 ```
