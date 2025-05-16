@@ -16,6 +16,9 @@ docker run —name <name> <image> : to give a custom name
 
 # Publishing Ports
 docker run —p 5173:5173 <image> : to publish a port HOST:CONTAIN
+    update json file: "dev": "vite --host 0.0.0.0",
+    (running vite locally)
+
 
 # Logs
 docker logs <containerID>
@@ -31,6 +34,13 @@ docker exec -it <containerID> sh
         run: starts a new container and runs command
         exec: execute a command in a running program
 
+# Stopping & Starting Containers
+docker stop <containerID>
+docker start <containerID
+
+    start vs run
+        run  : start new container
+        start: start a stopped container
 
 
 ```
