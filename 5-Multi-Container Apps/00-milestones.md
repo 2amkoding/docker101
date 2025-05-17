@@ -6,6 +6,7 @@
 
 
 # Lets clean it up
+
 docker container ls -q
     - lists singlefile of all images
 docker container rm  -f $(docker container ls -aq)
