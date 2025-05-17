@@ -2,9 +2,9 @@
 [x] Starting & stopping containers
 [x] Publishing ports
 [x] Viewing logs
-[] Executing commands in containers
-[] Removing containers
-[] Persisting data using volumes
+[x] Executing commands in containers
+[x] Removing containers
+[x] Persisting data using volumes
 Sharing source code
 
 # Commands
@@ -48,5 +48,20 @@ docker rm <containerID>
 docker rm -f <containerID>  : to force the removal
 docker container prune      : to remove stopped containers
 
+# Volumes
+docker volume ls
+docker volume create app-data
+docker volume inspect app-data
+docker run -v app-data:/app/data <image>
+
+persist data between dockerized apps
+share volumes between multi-containers
+
+# Copy files between Host and Container
+docker cp <containerID>:/app/log.txt .
+docker cp secret.txt <containerID>:/app
+
+# Sharing source code with containers
+docker run -v $(pwd):/app <image>
 
 ```
